@@ -6,7 +6,7 @@ export const UnderTodo = (props) => {
     <ul>
         {underTodos.map((todo, index) => {
           return(
-            <div key={todo}>
+            <div key={index}>
               <li>{todo}</li>
                <button onClick={() => onClick(index)}>削除</button>
             </div>
